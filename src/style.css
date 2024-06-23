@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    background: #333;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    height: 100vh;
+    width: 100vw;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem; /* Adjust this value if the navbar overlaps with section content */
+  }
+  
+  #home {
+    background: #18181c;
+  }
+  
+  #about {
+    background: #e0e0e0;
+  }
+  
+  #skills {
+    background: #d0d0d0;
+  }
+  
+  #timeline {
+    background: #c0c0c0;
+  }
+  
+  #projects {
+    background: #b0b0b0;
+  }
+  
+  #contact {
+    background: #a0a0a0;
+  }
+  
