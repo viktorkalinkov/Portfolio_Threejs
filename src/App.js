@@ -7,10 +7,12 @@ import Timeline from './pages/Timeline';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import useScrollTo from './hooks/useScrollTo';
+import useSmoothScroll from './hooks/useSmoothScroll';
 import './index.css';
 
 function App() {
   useScrollTo();
+  useSmoothScroll();
 
   return (
     <div className="App">

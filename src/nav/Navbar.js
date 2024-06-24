@@ -69,28 +69,28 @@ const Navbar = () => {
             <div className='location' style={{
               bottom: navOpen ? '0' : '-20px',
               opacity: navOpen ? '1' : '0',
-              transitionDelay: navOpen ? '1.2s' : '0'
+              transitionDelay: navOpen ? '0.8s' : '0'
             }}>
               <span>The Netherland, EH</span>
-              <div className='nav-social-media'>
+            </div>
+            <div className='nav-social-media'>
                 <ul>
                   <li>
                     <a href='https://www.linkedin.com' style={{
               bottom: navOpen ? '0' : '-20px',
               opacity: navOpen ? '1' : '0',
-              transitionDelay: navOpen ? '1.3s' : '0'
+              transitionDelay: navOpen ? '0.8s' : '0'
             }}>LinkedIn</a>
                   </li>
                   <li>
                     <a href='https://www.instagram.com' style={{
               bottom: navOpen ? '0' : '-20px',
               opacity: navOpen ? '1' : '0',
-              transitionDelay: navOpen ? '1.4s' : '0'
+              transitionDelay: navOpen ? '0.8s' : '0'
             }}>Instagram</a>
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </div>
       </div>

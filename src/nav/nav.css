@@ -1,23 +1,25 @@
 @font-face {
     font-family: 'Borrachera';
-    src: url('../fonts/Borrachera.otf') format('opentype'); /* Update the path if necessary */
+    src: url('../fonts/Borrachera.otf') format('opentype');
+    /* Update the path if necessary */
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Rosseta';
-    src: url('../fonts/Rosseta.ttf') format('truetype'); /* Update the path if necessary */
+    src: url('../fonts/Rosseta.ttf') format('truetype');
+    /* Update the path if necessary */
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-.nav{
+.nav {
     position: fixed;
     z-index: 2;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +30,7 @@
     padding: 2em;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: #fff;
     font-family: "Monument Extended";
@@ -36,11 +38,11 @@
     text-transform: uppercase;
 }
 
-.menu-toggle{
+.menu-toggle {
     cursor: pointer;
 }
 
-.nav-overlay{
+.nav-overlay {
     position: fixed;
     background: #18181c;
     z-index: -2;
@@ -53,25 +55,26 @@
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.hamBox{
+.hamBox {
     position: relative;
     width: 44px;
     height: 44px;
     cursor: pointer;
     border-radius: 50%;
     transition: 0.3 ease;
-    padding: 2.4em ;
+    padding: 2.4em;
 }
 
-.hamBox:hover{
+.hamBox:hover {
     background: #2a2a2f;
 }
 
-.hamBoxOpen{
+.hamBoxOpen {
     background: #2a2a2f;
 }
 
-.lineTop, .lineBottom{
+.lineTop,
+.lineBottom {
     margin: 0 auto;
     position: absolute;
     display: block;
@@ -85,27 +88,27 @@
     transition: all 0.4s;
 }
 
-.lineTop{
+.lineTop {
     top: 2.2em;
 }
 
-.lineBottom{
+.lineBottom {
     bottom: 2.2em;
 }
 
-.lineTop.spin{
+.lineTop.spin {
     top: 2.35em;
     transform: rotate(135deg);
     background: #fff;
 }
 
-.lineBottom.spin{
+.lineBottom.spin {
     bottom: 2.35em;
     transform: rotate(225deg);
     background: #fff;
 }
 
-ul.nav-links{
+ul.nav-links {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,12 +121,12 @@ ul.nav-links{
     align-items: center;
 }
 
-ul.nav-links li{
+ul.nav-links li {
     list-style: none;
     position: relative;
 }
 
-ul.nav-links li a{
+ul.nav-links li a {
     text-decoration: none;
     color: #fff;
     font-family: 'Rosseta', sans-serif;
@@ -133,7 +136,7 @@ ul.nav-links li a{
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.nav-item-wrapper:after{
+.nav-item-wrapper:after {
     content: "";
     position: absolute;
     top: 120px;
@@ -144,7 +147,7 @@ ul.nav-links li a{
     margin: 0 auto;
 }
 
-.nav-footer{
+.nav-footer {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -154,19 +157,19 @@ ul.nav-links li a{
     justify-content: space-between;
 }
 
-.nav-social-media ul{
+.nav-social-media ul {
     display: flex;
 }
 
-.nav-social-media ul li{
+.nav-social-media ul li {
     list-style: none;
 }
 
-.nav-social-media ul li a{
+.nav-social-media ul li a {
     position: relative;
     bottom: -20px;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family:'Borrachera', sans-serif;
     color: #fff;
     text-transform: uppercase;
     padding-left: 2em;
@@ -174,29 +177,30 @@ ul.nav-links li a{
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.location{
+.location {
     position: relative;
     bottom: -20px;
     opacity: 0;
+    color: #fff;
     transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-    font-family: sans-serif;
+    font-family:'Borrachera', sans-serif;
     text-transform: uppercase;
 }
 
-@media (max-width: 900px){
-    ul.nav-links li a{
+@media (max-width: 900px) {
+    ul.nav-links li a {
         font-size: 5em;
     }
 
-    .location{
+    .location {
         display: none;
     }
 
-    .nav-footer{
+    .nav-footer {
         justify-content: space-around;
     }
 
-    .nav-social-media ul li a{
+    .nav-social-media ul li a {
         padding: 0 1em;
     }
 }
